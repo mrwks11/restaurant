@@ -2,7 +2,7 @@ const header = (body, content) => {
   const headerElement = document.createElement('header');
   headerElement.innerHTML = `
     <img src="images/thai-flag.png" class="flag-image" alt="thai-flag"></img>
-    <nav>
+    <nav class="nav-bar">
       <ul class="tab-list">
         <li class="tab-list-item">HOME</li>
         <li class="tab-list-item">MENU</li>
