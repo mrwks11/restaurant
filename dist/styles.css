@@ -1,0 +1,66 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  margin: auto;
+  padding: 0;
+}
+
+.nav-bar {
+  color: white;
+}
+
+.tab {
+  cursor: pointer;
+}
+
+.flag-image {
+  float: left;
+  max-height: 100px;
+  padding: 20px;
+}
+
+ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  float: right;
+  padding: 0 10px;
+}
+
+li {
+  list-style: none;
+  padding: 20px;
+}
+
+.header-image {
+  background-image: url('images/thai-som-tum.jpg');
+  background-size: cover;
+  background-position: center;
+  min-width: 360px;
+  min-height: 400px;
+}
+
+.title, .content {
+  padding: 0 20px;
+}
+
+label, input {
+  display: block;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+
+}
+
+.dishes {
+  height: 300px;
+  width: 360px;
+}
