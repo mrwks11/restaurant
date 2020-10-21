@@ -7,14 +7,29 @@ import contact from './contact'
 const body = document.querySelector('body');
 // Select Content Div
 const content = document.getElementById('content');
+
 // Load Header
 header(body, content);
-// Load Home
+// Load Home Content
 home(content);
 
-// EVENT: Click HOME
-homeTab.addEventListener('click', home(content));
-// EVENT: Click MENU
-menuTab.addEventListener('click', menu(content));
-// EVENT: Click CONTACT
-contactTab.addEventListener('click', contact(content));
+// Select Link Tabs
+const tabs = document.querySelectorAll('.tab-list-item');
+
+// Event: Click Tab
+tabs.forEach(tab => {
+  tab.addEventListener('click', switchTabs)
+});
+
+// Switch Tabs
+function switchTabs(e) {
+  if (e.target.innerText === 'HOME') {
+    home(content);
+  } 
+  if (e.target.innerText === 'MENU') {
+    menu(content);
+  } 
+  if (e.target.innerText === 'CONTACT') {
+    contact(content);
+  }
+}

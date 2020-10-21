@@ -1,3 +1,5 @@
+/* GENERAL */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -11,29 +13,25 @@ body {
   padding: 0;
 }
 
-.nav-bar {
-  color: white;
-}
+/* HEADER */
 
-.tab {
-  cursor: pointer;
-}
-
-.flag-image {
-  float: left;
-  max-height: 100px;
-  padding: 20px;
-}
-
-ul {
+.tab-list {
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
   display: flex;
   float: right;
   padding: 0 10px;
 }
 
-li {
+.tab-list-item {
+  cursor: pointer;
   list-style: none;
+  padding: 20px;
+}
+
+.flag-image {
+  float: left;
+  max-height: 100px;
   padding: 20px;
 }
 
@@ -45,13 +43,13 @@ li {
   min-height: 400px;
 }
 
-.title, .content {
+/* CONTENT */
+
+.content {
   padding: 0 20px;
 }
 
-label, input {
-  display: block;
-}
+/* MENU PAGE */
 
 .menu {
   display: grid;
@@ -60,7 +58,18 @@ label, input {
 
 }
 
-.dishes {
+.dish-image {
   height: 300px;
   width: 360px;
+}
+
+/* CONTACT PAGE */
+
+.contact-form > label, input {
+  display: block;
+  margin: 10px 0;
+}
+
+.contact-form > input {
+  padding: 5px;
 }
